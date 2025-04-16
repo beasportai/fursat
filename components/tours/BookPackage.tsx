@@ -22,7 +22,6 @@ interface Props {
   transactionFee: number;
   currency: PriceEnum;
   guestCount: number;
-
 }
 
 export default function BookPackage({
@@ -45,9 +44,8 @@ export default function BookPackage({
   const { redirectToSignUp } = useClerk(); // Clerk signup handler
 
   const bookTrip = async () => {
-    if (!isSignedIn) { // skip this condition for now
+    if (!isSignedIn) {
       // Redirect to signup if not signed in
-
       return redirectToSignUp({
         afterSignInUrl: pathname,
         afterSignUpUrl: pathname,

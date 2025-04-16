@@ -8,7 +8,7 @@ type RootProps = {
 
 const RootLayout = ({ children }: RootProps) => {
   return (
-    <main className="min-h-[calc(100vh-4.9rem)]">
+    <main className="min-h-[calc(100dvh-4.9rem)]">
       <ClientLayout>
         <Navbar />
       </ClientLayout>
